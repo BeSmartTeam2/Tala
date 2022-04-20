@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DISCOUNT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/dis.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</head>
+
+<body>
+    <!-- ---------nav-------- -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="discount.jpg" style="height: 60px; width: 160px;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars "></i>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-2 m-lg-3 active" aria-current="page" href="#">
+                            <i class="fab fa-adn"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-2 m-lg-3" href="#">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-2 m-lg-3" href="#">
+                            <i class="fas fa-user-alt "   ></i>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+
+                    <button class="seraech mt-4 "><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class="form-control mt-4" type="search"  aria-label="Search">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle rounded-pill" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ALL
+            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>the</li>
+                            <li><a class="dropdown-item" href="#">the first</a></li>
+                            <li><a class="dropdown-item" href="#">second</a></li>
+                            <li><a class="dropdown-item" href="#">theard</a></li>
+                        </ul>
+                    </li>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ----------End nav------------ -->
+
+
+    <div class="container-fluid product">
+        <div class="row">
+            <!-- --------left-------- -->
+            <div class="column col-7 ">
+                <div class="d-flex">
+                    <div class="col-6">
+                        <h2>تفاصيل الشراء
+                        </h2>
+                        <div class="details">
+                            <label> الكمية المتاحة :
+
+                            <div class="def-number-input number-input safari_only">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                            </div></label>
+
+                            <br>
+                            <label> المبلغ المطلوب : </label>
+                            <input type="text">
+                            <br>
+                            <label> جهات الشحن : </label>
+                            <div class="input-group mb-3">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option > أختر الجهة </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+            
+
+                    <div class="col">
+                        <div class="hr"> </div>
+                    </div>
+
+                    <div class=" cash col-6">
+                        <h2>طريقة الدفع </h2>
+                        <label> رقم الحساب : </label>
+
+                        <input type="number">
+                        <br>
+                        <button class=" btn " value=" تأكيد">   تأكيد  </button>
+                        <i class="fab fa-adn fa-3x" style="color: #dee2e8"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------End left --------- -->
+
+            <!-- ----------right --------- -->
+            <div class="column col-5 ">
+                <h2> المنتج</h2>
+                <br>
+                <div class="flex">
+                    <div class="col-6">
+                        <img src="pro.jpg">
+                        <label class="price"> السعر :
+                        </label>
+                        <input type="input" class="field" required />
+                        <label class="price"> سعر الخصم :
+                        </label>
+                        <input type="input" class="field" required />
+                        <label class="price">  السعر النهائي :
+                        </label>
+                        <input type="input" class="field" required />
+                    </div>
+                    <div class=" col-6">
+                        <label class="formlabel2">  العنوان:   </label>
+                        <input type="input" class="form__field" required />
+
+                        <label class="formlabel">معلومات عن المنتج :
+                        </label><input type="input" class="form__field" required />
+                        <input type="input" class="form__field" required />
+                        <input type="input" class="form__field" required />
+
+                        <label class="formlabel">أراء المستخدمين  :
+                        </label>
+                        <input type="input" class="form__field" required />
+                        <input type="input" class="form__field" required />
+                        <button class=" btn " value=" استكمل">   استكمل  </button>
+                    </div>
+                </div>
+                <div class="d-sm-grid">
+                    <button class=" btn " value=" استكمل الطلب "> استكمل الطلب </button>
+                </div>
+            </div>
+            <!-- ----------End right --------- -->
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
