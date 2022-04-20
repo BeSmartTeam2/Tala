@@ -1,0 +1,430 @@
+:root {
+    --dark-color: #966c7d;
+    --color: #343a40;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--dark-color);
+    height: 10000px;
+}
+/* -----------nav-------- */
+.navbar {
+    background-color: black;
+    direction: rtl;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.dropdown-toggle {
+    background-color: white;
+    width: 80px;
+    height: 35px;
+    color: black;
+}
+
+.form-control {
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+    content: "";
+    z-index: 1;
+    padding: 1rem 2rem;
+    direction: ltr
+}
+
+.dropdown-menu {
+    background-color: rgb(151, 166, 177);
+    font-family: cursive;
+}
+
+.seraech {
+    background-color: rgb(243, 162, 11);
+    color: black;
+    border-radius: 50%;
+    width: 42px;
+    height: 37px;
+    z-index: 5;
+    position: absolute;
+}
+  
+.navbar .d-flex {
+    display: flex!important;
+    align-items: center;
+}
+.seraech:hover {
+    background-color: rgb(243, 11, 108);
+}
+
+.fa-bars {
+    color:darkkhaki;
+    width: 60px;
+}
+.fas , .fab {
+    color: #dee2e8;
+font-size: 30px;}
+
+/* -------------End nav---------------- */
+/* -----------right------------ */
+
+.product {
+    margin-top: 25px;
+}
+
+.container-fluid .col-5 h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: gray;
+}
+
+.row {
+    column-gap: 20px;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-5 {
+    width: 35%;
+    background-color: white;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+    height: max-content;
+    border-radius: 80px;
+    margin-top: 15px;
+}
+
+.flex .col-6 label {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.flex .col-6 .formlabel2,
+.formlabel {
+    color: red;
+    margin-right: 10px;
+}
+
+.flex .col-6 .formlabel {
+    padding-top: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout  */
+
+@media screen and (max-width: 1000px) {
+    .row .column {
+        width: 100%;
+    }
+    .flex .col-6 {
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.flex .col-6 img {
+    vertical-align: middle;
+    border-radius: 34%;
+    width: -webkit-fill-available;
+}
+
+.flex .col-6 input {
+    border: none;
+    border-bottom: 3px solid var(--color);
+    background-color: white;
+    display: block;
+    width: -webkit-fill-available;
+}
+
+.flex .col-6 .price {
+    display: grid;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.flex .col-6 {
+    width: 50%;
+    direction: rtl;
+}
+
+.flex .col-6 .btn {
+    border-radius: 25px;
+    padding: 5px 45px 5px 45px;
+    margin-top: 25px;
+    margin-right: 25px;
+    background-color: darkred;
+    color: white;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.d-sm-grid button {
+    border-radius: 25px;
+    padding: 7px 30px 7px 30px;
+    margin: 10px 50px 25px 50px;
+    background-color: darkred;
+    font-size: x-large;
+    color: white;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.d-sm-grid button:hover,
+.flex .col-6 .btn:hover,
+.flex .col-6 .btn:active,
+.flex .col-6 button:active,
+.row .column .d-flex .cash button:active,
+.row .column .d-flex .cash button:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: white
+}
+
+/* -----------End right -------- */
+/*----------col7 left-----------*/
+
+.col-7 {
+    width: 61%;
+    background-color: var(--color);
+}
+.container-fluid .col-7 h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.row .column .d-flex .col-6 h2 {
+        color: yellow;
+    }
+    
+.row .column .d-flex .cash h2 {
+        color: #966c7d;
+    }
+
+.hr {
+    border: 1px solid white;
+    height: 450px;
+    width: 0px;
+    margin-top: 70px;
+}
+
+.row .column .d-flex {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+@media screen and (max-width: 400px) {
+    .row .column .d-flex .col-8 ,.row .column .d-flex .col-4{width: 50%;}
+
+}
+.row .column .d-flex .col-6,
+.row .column .d-flex .col-6 {
+    direction: rtl;
+    color: yellow;
+}
+
+.row .column .d-flex .col-6 {
+    text-align: center;
+}
+
+.details label,
+.row .column .d-flex .cash label {
+    display: flex;
+    font: 1.8rem 'Fira Sans', sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.row .column .d-flex input[type='number']::-webkit-inner-spin-button,
+.row .column .d-flex input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.row .column .d-flex .cash label{padding-right: 15px;}
+.row .column .d-flex .cash input {
+    padding-right: 7px;
+}
+
+.row .column .d-flex .cash button {
+    border-radius: 25px;
+    padding: 7px 45px 7px 45px;
+    margin-top: 50px;
+    background-color: lightslategray;
+    font-size: x-large;
+    color: white;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.details input,
+.cash input {
+    border: none;
+    border-bottom: red solid 1px;
+    background-color: var(--color);
+    font-size: 1.1rem;
+}
+
+.number-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.number-input button {
+    -webkit-appearance: none;
+    background-color: black;
+    border: 1px solid black;
+    color: red;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    text-align: center;
+}
+
+.number-input.number-input {
+    width: 5rem;
+    border-radius: .25rem;
+}
+
+.number-input.number-input button {
+    width: 2.2rem;
+    height: 0.8rem;
+}
+
+.number-input.number-input button.minus,
+.number-input.number-input button.plus {
+    text-align: justify;
+}
+
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+}
+
+.number-input.number-input input[type=number] {
+    max-width: 2rem;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1.3rem;
+    height: 1.5rem;
+    color: black;
+    background-color: white;
+}
+
+@media not all and (min-resolution: .001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+        .number-input.def-number-input.safari_only button:before, .number-input.def-number-input.safari_only button:after {
+            margin-top: -.3rem;
+        }
+    }
+}
+
+.input-group>.form-control {
+    background-color: var(--color);
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    width: 90%;
+}
+
+.input-group>.form-control,
+.input-group>.form-select {
+    position: relative;
+    width: auto;
+}
+
+.input-group>.form-control,
+.input-group>.form-select {
+    position: relative;
+    width: auto;
+}
+
+.input-group>.form-control,
+.input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.form-select {
+    background-position: left 0.75rem center;
+    border: none;
+    background-color: var(--color);
+    border-bottom: red 1px solid;
+    color: red;
+}
+
+.cash i {
+    float: left;
+    margin-top: 260px;
+}
+/* -----------End left-------- */
