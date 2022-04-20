@@ -1,0 +1,219 @@
+:root {
+    --dark-color: #966c7d;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--dark-color);
+    height: 10000px;
+}
+/* -----------nav-------- */
+.navbar {
+    background-color: black;
+    direction: rtl;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.dropdown-toggle {
+    background-color: white;
+    width: 80px;
+    height: 35px;
+    color: black;
+}
+
+.form-control {
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+    content: "";
+    z-index: 1;
+    padding: 1rem 2rem;
+    direction: ltr
+}
+
+.dropdown-menu {
+    background-color: rgb(151, 166, 177);
+    font-family: cursive;
+}
+
+.seraech {
+    background-color: rgb(243, 162, 11);
+    color: black;
+    border-radius: 50%;
+    width: 42px;
+    height: 37px;
+    z-index: 5;
+    position: absolute;
+}
+  
+.navbar .d-flex {
+    display: flex!important;
+    align-items: center;
+}
+.seraech:hover {
+    background-color: rgb(243, 11, 108);
+}
+
+.fa-bars {
+    color: darkkhaki;
+    width: 60px;
+}
+.fas , .fab {
+    color: #dee2e8;
+font-size: 30px;}
+/* -----------END nav-------- */
+
+/* --------------------ADS----------- */
+
+.Ads{
+    height: 250px;
+    background-color: blanchedalmond;
+    direction: rtl;
+    
+}
+
+.pro{
+    height: 250px;
+}
+
+
+/* --------------------end ADS----------- */
+
+
+/* --------------------products----------- */
+
+.container {
+    border: solid 1px white;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 15px;
+}
+
+.container .row {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.row img {
+    right: 0ch;
+    border-radius: 50%;
+    width: -webkit-fill-available;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.row input {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.row label {
+    line-height: 1.6;
+    padding: 12px 12px 12px 0;
+    font-size: larger;
+    font-weight: bold;
+}
+
+input[type=text] {
+    border: none;
+    resize: vertical;
+    border-bottom: 1px solid black;
+    width: 65%;
+}
+
+input[type=number] {
+    border: none;
+    resize: vertical;
+    border-bottom: 1px solid black;
+    width: 72%;
+}
+
+input[type=text]:active,
+input[type=number]:active {
+    border: none;
+    resize: vertical;
+    border-bottom: 1px solid black;
+}
+
+.col-sm-6 {
+    direction: rtl;
+    padding-bottom: 15px;
+}
+
+input[type=submit] {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: grid;
+    width: 100%;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+input[type=submit]:hover , input[type=submit]:active, .row img:active, .row img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .row img {
+        right: 0ch;
+        border-radius: 50%;
+        width: -webkit-fill-available;
+    }
+}
+
+@media (max-width: 576px) {
+    .row .kkk {
+        padding-bottom: 30px;
+    }
+    .row img {
+        width: auto;
+        height: auto;
+    }
+    .kk {
+        width: auto;
+    }
+}
+
+
+/* -------------------- end products----------- */
